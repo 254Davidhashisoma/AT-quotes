@@ -1,6 +1,8 @@
 .card{
-    background-color: rgb(74, 74, 104);
+    background-color: rgb(167, 167, 170);
     margin-bottom: 2em;
+    padding: 16px;
+    box-shadow: 4em;
 }
 *{
     padding: 10px;

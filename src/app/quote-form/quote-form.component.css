@@ -1,6 +1,13 @@
 form{
     background-color: darkgray;
+    margin: 8em;
+
+
 }
 h2{
     background-color: rgb(207, 201, 177);
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 8px;
+    box-sizing: border-box;
 }
