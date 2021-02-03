@@ -2,4 +2,6 @@
 @import "bootstrap/dist/css/bootstrap.css";
 .card{
     background-color:rgb(246, 246, 246);
+    margin-bottom: 4em;
+    margin-right: 1em;
 }
