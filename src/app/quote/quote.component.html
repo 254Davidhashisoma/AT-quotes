@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row flex-top justify-content-center">
+    <header class="border shadow">
+      <div class="card-header">
+      <h1>The-Daily-Quotes !</h1>
+      </div>
+    </header>
+  </div><br>
+  
+ <div class="container-fluid">
+   
+  <div class="row flex-top justify-content-center">
+         
+      <div class="card" style="width: 18rem" *ngFor="let quote of quotes; let i = index">
+     
+        <div class="card-group" >
+
+          <h5 class="card-title">{{ quote.id }} {{ quote.author }}</h5>
+          <p class="card-text">{{ quote.user }}</p>
+           <p>{{quote.description}}</p> 
+           <p><b>{{quote.day|dateCount}} Days Ago</b></p> 
+          <button class="btn btn-primary"(click)='like(i)'>Like {{ quote.like }}</button><br>
+          <button class="btn btn-info"(click)='unlike(i)'>Unlike {{ quote.unlike }}</button><br>
+          <button class="btn btn-danger" (click) = 'deleteQuote($event,i)'><p><strong>Delete</strong></p></button><br>
+        </div>
+      </div>
+    </div>
+  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+  
+</div>
+
+</div>
